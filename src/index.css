@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* 
+Inter → botones, navegación, precios, categorías, textos.
+Playfair Display → títulos grandes, banners, frases destacadas.
+*/
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #f42c37;
+  --color-secondary: #f42c37;
+  --color-brandYellow: #fdc62e;
+  --color-brandGreen: #2dcc6f;
+  --color-brandBlue: #1376f4;
+  --color-brandWhite: #eee;
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Playfair Display", serif;
+}
+
+@utility container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1rem;
+
+  @media (min-width: 640px) {
+    max-width: 640px;
+    padding-inline: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 768px;
+    padding-inline: 3rem;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1024px;
+    padding-inline: 3rem;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1280px;
+    padding-inline: 3rem;
+  }
+}
