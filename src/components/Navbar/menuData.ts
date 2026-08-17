@@ -14,9 +14,4 @@ export const menuData = [
     name: "About",
     href: "#about",
   },
-  {
-    id: 4,
-    name: "Quick Links",
-    href: "#quick-links",
-  },
 ];
