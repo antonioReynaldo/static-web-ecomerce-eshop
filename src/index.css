@@ -11,11 +11,14 @@ Playfair Display → títulos grandes, banners, frases destacadas.
 
 @theme {
   --color-primary: #f42c37;
-  --color-secondary: #f42c37;
+  --color-brandRed: #f42c37;
   --color-brandYellow: #fdc62e;
   --color-brandGreen: #2dcc6f;
   --color-brandBlue: #1376f4;
+  --color-brandGray: #949aa6;
   --color-brandWhite: #eee;
+  --color-brandBlack: #000;
+  --color-brandViolet: #8b5cf6;
   --font-sans: "Inter", sans-serif;
   --font-display: "Playfair Display", serif;
 }
