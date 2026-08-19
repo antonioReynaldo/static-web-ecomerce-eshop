@@ -19,6 +19,7 @@ export default function Button({
         variant === "secondary" && "bg-white text-brandBlack",
         className,
       )}
+      {...props}
     >
       {children}
     </button>

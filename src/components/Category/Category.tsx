@@ -1,5 +1,10 @@
-import Button from "../ui/Button";
+import CardCategory from "./CardCategory";
 import Img1 from "../../assets/category2/earphones.png";
+import Img2 from "../../assets/category2/gadget.png";
+import Img3 from "../../assets/category2/laptop2.png";
+import Img4 from "../../assets/category2/consola.png";
+import Img5 from "../../assets/category2/vr.png";
+import Img6 from "../../assets/category2/speaker.png";
 
 export default function Category() {
   return (
@@ -8,21 +13,53 @@ export default function Category() {
         {/* Grid container cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ">
           {/* Card 1 */}
-          <div className="p-5 bg-linear-to-br from-black/90 to-black/70 text-white rounded-3xl">
-            <div className="">
-              <div className="flex">
-                <div className="flex-1 flex flex-col justify-center gap-2">
-                  <p>Enjoy</p>
-                  <p>With</p>
-                  <h3 className="mb-2.5">Earphone</h3>
-                  <Button className="py-1">Browse</Button>
-                </div>
-                <div className="w-[150px] h-[150px]">
-                  <img src={Img1} alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
+          <CardCategory
+            title="With"
+            subtitle="Enjoy"
+            name="Earphone"
+            image={Img1}
+            className="lg:col-span-2 xl:col-span-1"
+          ></CardCategory>
+          {/* Card 2 */}
+          <CardCategory
+            title="With"
+            subtitle="Enjoy"
+            name="Gatget"
+            image={Img2}
+            className="bg-linear-to-br from-brandYellow to-brandYellow/90 lg:col-span-2 xl:col-span-1"
+          ></CardCategory>
+          {/* Card 3 */}
+          <CardCategory
+            title="With"
+            subtitle="Enjoy"
+            name="Laptop"
+            image={Img3}
+            className="bg-linear-to-br from-brandRed to-brandRed/80 sm:col-span-2"
+          ></CardCategory>
+          {/* Card 4 */}
+          <CardCategory
+            title="With"
+            subtitle="Enjoy"
+            name="Console"
+            image={Img4}
+            className="bg-linear-to-br from-brandGray to-brandGray/40 sm:col-span-2"
+          ></CardCategory>
+          {/* Card 5 */}
+          <CardCategory
+            title="With"
+            subtitle="Enjoy"
+            name="VR"
+            image={Img5}
+            className="bg-linear-to-br from-brandBlue to-brandBlue/80 lg:col-span-2 xl:col-span-1"
+          ></CardCategory>
+          {/* Card 6 */}
+          <CardCategory
+            title="With"
+            subtitle="Enjoy"
+            name="Speakers"
+            image={Img6}
+            className="bg-linear-to-br from-brandGreen to-brandGreen/80 lg:col-span-2 xl:col-span-1"
+          ></CardCategory>
         </div>
       </div>
     </section>
