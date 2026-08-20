@@ -8,7 +8,7 @@ import CardService from "./CardService";
 
 export default function Services() {
   return (
-    <section className="pb-8">
+    <section className="pb-20 dark:bg-gray-900">
       <div className="container">
         <div className="grid grid-cols-2 gap-3.75 lg:grid-cols-4 lg:gap-7.5">
           {/* card 1 */}

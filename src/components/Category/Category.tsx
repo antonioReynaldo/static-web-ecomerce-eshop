@@ -8,7 +8,7 @@ import Img6 from "../../assets/category2/speaker.png";
 
 export default function Category() {
   return (
-    <section className="dark:bg-gray-900 pb-8">
+    <section className="dark:bg-gray-900 pb-20">
       <div className="container">
         {/* Grid container cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ">

@@ -15,8 +15,8 @@ export default function CardService({
   return (
     <div className="shadow-md rounded-2xl p-2.5">
       <div className="flex flex-col gap-2">
-        <Icon className="text-primary text-2xl sm:text-4xl lg:text-5xl mb-2.5" />
-        <h3 className="font-bold  lg:text-lg">{title}</h3>
+        <Icon className="text-primary text-4xl sm:text-5xl mb-2.5" />
+        <h3 className="font-bold  lg:text-lg dark:text-white">{title}</h3>
         <p className="text-gray-500 text-xs md:text-sm lg:text-base">{text}</p>
       </div>
     </div>

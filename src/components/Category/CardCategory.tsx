@@ -21,7 +21,7 @@ export default function CardCategory({
   return (
     <div
       className={cn(
-        "p-7.5 bg-linear-to-br from-black/90 to-black/70 text-white rounded-3xl h-[280px]",
+        "p-7.5 bg-linear-to-br from-black/90 to-black/70 text-white rounded-3xl h-70",
         className,
       )}
       {...props}
