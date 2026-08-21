@@ -24,20 +24,32 @@ export default function Hero() {
             <SwiperSlide key={data.id}>
               <div className="h-full min-h-137.5 sm:min-h-162.5 grid grid-cols-1 sm:grid-cols-2 relative p-4 md:p-14 mb-7">
                 <div className="place-content-center flex flex-col gap-4 font-display order-2 sm:order-1 text-center sm:text-left">
-                  <h1 className="text-2xl sm:text-4xl font-bold">
+                  <h1
+                    data-aos="fade-right"
+                    className="text-2xl sm:text-4xl font-bold"
+                  >
                     {data.subTitle}
                   </h1>
-                  <h1 className="text-[clamp(2.3rem,6vw,4.5rem)] font-bold text-primary">
+                  <h1
+                    data-aos="fade-right"
+                    className="text-[clamp(2.3rem,6vw,4.5rem)] font-bold text-primary"
+                  >
                     {data.title}
                   </h1>
-                  <h1 className="uppercase font-bold text-[clamp(2.5rem,5.5vw,12rem)] text-white dark:text-white/30 text-shadow-xs text-shadow-black">
+                  <h1
+                    data-aos="fade-right"
+                    className="uppercase font-bold text-[clamp(2.5rem,5.5vw,12rem)] text-white dark:text-white/30 text-shadow-xs text-shadow-black"
+                  >
                     {data.title2}
                   </h1>
-                  <Button className="mx-auto sm:mx-0">Shop by category</Button>
+                  <Button data-aos="fade-up" className="mx-auto sm:mx-0">
+                    Shop by category
+                  </Button>
                 </div>
 
                 <div className="w-62.5 h-62.5 sm:w-87.5 sm:h-87.5 xl:w-115 xl:h-115 place-self-center order-1 sm:order-2">
                   <img
+                    data-aos="zoom-in"
                     src={data.img}
                     alt={data.title}
                     className="w-full h-full object-fill"

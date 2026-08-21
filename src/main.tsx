@@ -7,7 +7,8 @@ import { ThemeProvider } from "./context/ThemeContext.tsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init({
-  once: true,
+  once: false,
+  mirror: true,
   duration: 700,
   easing: "ease-out",
   offset: 100,

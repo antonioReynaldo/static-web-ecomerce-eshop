@@ -11,6 +11,7 @@ export default function Partners() {
         <div className="grid grid-cols-3 gap-5 place-content-center sm:grid-cols-5 opacity-50">
           <div className="place-items-center col-span-3 sm:col-span-1 sm:place-items-center">
             <img
+              data-aos="zoom-in"
               src={Partner1}
               alt="Brand Golden"
               className="place-content-center dark:invert w-20 lg:w-25"
@@ -18,6 +19,7 @@ export default function Partners() {
           </div>
           <div className="place-content-center sm:place-items-center">
             <img
+              data-aos="zoom-in"
               src={Partner2}
               alt="Brand Jack Roller 2"
               className="place-items-center dark:invert w-20 lg:w-25"
@@ -26,6 +28,7 @@ export default function Partners() {
 
           <div className="place-content-center sm:place-items-center">
             <img
+              data-aos="zoom-in"
               src={Partner3}
               alt="Brand Sweety"
               className=" dark:invert w-20 lg:w-25"
@@ -33,6 +36,7 @@ export default function Partners() {
           </div>
           <div className="place-content-center sm:place-items-center">
             <img
+              data-aos="zoom-in"
               src={Partner4}
               alt="Brand Mighty Furnitures"
               className="place-items-center dark:invert w-20 lg:w-25"
@@ -40,6 +44,7 @@ export default function Partners() {
           </div>
           <div className="place-items-center col-span-3 sm:col-span-1 sm:place-items-center">
             <img
+              data-aos="zoom-in"
               src={Partner5}
               alt="Brand Fatslane"
               className="place-content-center dark:invert w-20 lg:w-25"

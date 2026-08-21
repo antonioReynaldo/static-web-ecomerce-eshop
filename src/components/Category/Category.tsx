@@ -14,6 +14,7 @@ export default function Category() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ">
           {/* Card 1 */}
           <CardCategory
+            data-aos="fade-right"
             title="With"
             subtitle="Enjoy"
             name="Earphone"
@@ -22,6 +23,7 @@ export default function Category() {
           ></CardCategory>
           {/* Card 2 */}
           <CardCategory
+            data-aos="fade-left"
             title="With"
             subtitle="Enjoy"
             name="Gatget"
@@ -30,6 +32,7 @@ export default function Category() {
           ></CardCategory>
           {/* Card 3 */}
           <CardCategory
+            data-aos="fade-right"
             title="With"
             subtitle="Enjoy"
             name="Laptop"
@@ -38,6 +41,7 @@ export default function Category() {
           ></CardCategory>
           {/* Card 4 */}
           <CardCategory
+            data-aos="fade-left"
             title="With"
             subtitle="Enjoy"
             name="Console"
@@ -46,6 +50,7 @@ export default function Category() {
           ></CardCategory>
           {/* Card 5 */}
           <CardCategory
+            data-aos="fade-right"
             title="With"
             subtitle="Enjoy"
             name="VR"
@@ -54,6 +59,7 @@ export default function Category() {
           ></CardCategory>
           {/* Card 6 */}
           <CardCategory
+            data-aos="fade-left"
             title="With"
             subtitle="Enjoy"
             name="Speakers"

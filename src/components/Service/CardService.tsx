@@ -13,7 +13,7 @@ export default function CardService({
   text,
 }: CardServiceProps) {
   return (
-    <div className="shadow-md rounded-2xl p-2.5">
+    <div data-aos="zoom-in" className="shadow-md rounded-2xl p-2.5">
       <div className="flex flex-col gap-2">
         <Icon className="text-primary text-4xl sm:text-5xl mb-2.5" />
         <h3 className="font-bold  lg:text-lg dark:text-white">{title}</h3>

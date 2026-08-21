@@ -8,7 +8,10 @@ type CardProductProps = {
 
 export default function CardProduct({ image, name, price }: CardProductProps) {
   return (
-    <div className="group shadow-md rounded-md overflow-hidden dark:bg-gray-700">
+    <div
+      data-aos="zoom-in"
+      className="group shadow-md rounded-md overflow-hidden dark:bg-gray-700"
+    >
       <div className="relative">
         <img
           src={image}

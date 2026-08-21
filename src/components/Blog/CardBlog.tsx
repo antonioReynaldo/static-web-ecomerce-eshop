@@ -7,12 +7,12 @@ type CardBlogProps = {
 
 export default function CardBlog({ image, date, title, text }: CardBlogProps) {
   return (
-    <div>
+    <div data-aos="fade-down">
       <div className="mb-2 ">
         <img
           src={image}
           alt="Imagen de blog"
-          className="rounded-2xl w-full h-[220px] object-cover hover:scale-105 transition-all duration-200"
+          className="rounded-2xl w-full h-55 object-cover hover:scale-105 transition-all duration-200"
         />
       </div>
       <div className="flex flex-col gap-1.5">
