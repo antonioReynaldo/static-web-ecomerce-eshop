@@ -8,6 +8,7 @@ import Banner from "./components/Banner/Banner";
 import Product from "./components/Product/Product";
 import Blog from "./components/Blog/Blog";
 import Partners from "./components/Partners/Partners";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -25,7 +26,9 @@ function App() {
         <Blog />
         <Partners />
       </main>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
