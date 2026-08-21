@@ -1,75 +1,113 @@
-# React + TypeScript + Vite
+# E-Shop Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+E-commerce responsive y moderno desarrollado con React, TypeScript y Tailwind CSS. Sitio web completo de tienda en línea con diseño profesional enfocado en la experiencia de usuario.
 
-Currently, two official plugins are available:
+## 📸 Screenshots
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Desktop
 
-## React Compiler
+![Web Desktop](./public/screenshots/GIF_desktop.gif)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Movil
 
-## Expanding the ESLint configuration
+![Web Movil](./public/screenshots/GIF_movil.gif)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Tecnologías
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React 19** - Biblioteca de UI declarativa
+- **TypeScript 6** - Tipado estático para mayor seguridad y mantenibilidad
+- **Tailwind CSS 4** - Framework de estilos utilitario
+- **Vite 8** - Herramienta de desarrollo y build ultrarrápida
+- **React Icons** - Iconografía moderna
+- **Swiper** - Slider y carruseles profesionales
+- **AOS** - Animaciones de scroll suaves
+- **Context API** - Gestión de estado para tema claro/oscuro
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📁 Estructura del Proyecto
 
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+src/
+├── components/
+│   ├── Banner/       # Banners promocionales
+│   ├── Blog/         # Sección de blog/noticias
+│   ├── Category/     # Categorías de productos
+│   ├── Footer/       # Pie de página
+│   ├── Hero/         # Hero section con slider
+│   ├── Navbar/       # Navegación principal con dropdown
+│   ├── Partners/     # Logos de marcas asociadas
+│   ├── Product/      # Catálogo de productos
+│   └── Service/      # Servicios destacados
+├── context/          # Contextos globales (Tema)
+├── hooks/            # Custom hooks
+├── utils/            # Utilidades (cn, etc.)
+└── main.tsx          # Punto de entrada
 ```
+
+## ✨ Características
+
+- 📱 **100% Responsive** - Diseño adaptable a móviles, tablets y desktop
+- 🎨 **Tema Claro/Oscuro** - Switch entre modos con persistencia
+- 🎬 **Animaciones Suaves** - Uso de AOS para interacciones elegantes
+- 🖼️ **Hero Slider** - Carrusel interactivo con Swiper
+- 🛍️ **Catálogo de Productos** - Grid responsive con cards
+- 📰 **Blog Section** - Sección de noticias/artículos
+- 🏢 **Partners Section** - Logos de marcas asociadas
+- 🎯 **Navegación Inteligente** - Menú con dropdowns y categorías
+- ⚡ **Optimizado** - Build con Vite para tiempos de carga mínimos
+
+## 🛠️ Instalación
+
+```bash
+pnpm install
+```
+
+## 🏃 Ejecución
+
+```bash
+# Desarrollo
+pnpm dev
+
+# Build de producción
+pnpm build
+
+# Preview
+pnpm preview
+```
+
+## 📋 Scripts Disponibles
+
+- `pnpm dev` - Iniciar modo desarrollo con hot-reload
+- `pnpm build` - Compilar para producción
+- `pnpm lint` - Ejecutar ESLint
+- `pnpm preview` - Preview del build
+
+## 🎨 Stack Visual
+
+| Componente    | Descripción             |
+| ------------- | ----------------------- |
+| Header/Navbar | Menú de navegación      |
+| Hero Section  | Slider promocional      |
+| Categorias    | Filtros por categoría   |
+| Productos     | Grid de productos       |
+| Banners       | Promociones visuales    |
+| Servicios     | Servicios destacados    |
+| Blog          | Noticias/artículos      |
+| Partners      | Marcas colaboradoras    |
+| Footer        | Información de contacto |
+
+## 🔧 Configuración
+
+El proyecto incluye:
+
+- ESLint configurado con reglas TypeScript-React
+- Tailwind CSS v4 (versión más reciente)
+- TypeScript con tipos estrictos
+- Hot Module Replacement (HMR)
+
+## 📄 Licencia
+
+MIT License
+
+---
+
+**Desarrollado para demostración de habilidades frontend.**
