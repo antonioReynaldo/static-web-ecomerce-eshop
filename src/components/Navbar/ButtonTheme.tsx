@@ -3,7 +3,6 @@ import { FaRegSun, FaRegMoon } from "react-icons/fa6";
 
 export default function ButtonTheme() {
   const { theme, toggleTheme } = useTheme();
-  console.log(theme);
 
   return (
     <button

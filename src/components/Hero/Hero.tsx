@@ -21,7 +21,7 @@ export default function Hero() {
           className="bg-linear-to-r from-gray-300/80 to-gray-100 dark:from-gray-800 dark:to-gray-800 dark:text-white rounded-2xl min-h-137.5 sm:min-h-162.5 "
         >
           {heroData.map((data) => (
-            <SwiperSlide key={data.title}>
+            <SwiperSlide key={data.id}>
               <div className="h-full min-h-137.5 sm:min-h-162.5 grid grid-cols-1 sm:grid-cols-2 relative p-4 md:p-14 mb-7">
                 <div className="place-content-center flex flex-col gap-4 font-display order-2 sm:order-1 text-center sm:text-left">
                   <h1 className="text-2xl sm:text-4xl font-bold">

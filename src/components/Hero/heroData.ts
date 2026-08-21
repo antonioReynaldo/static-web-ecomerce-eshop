@@ -11,14 +11,14 @@ export const heroData = [
     title2: "Headphone",
   },
   {
-    id: 1,
+    id: 2,
     img: Image2,
     subTitle: "Beats Solo",
     title: "Branded",
     title2: "Laptops",
   },
   {
-    id: 1,
+    id: 3,
     img: Image3,
     subTitle: "Beats Solo",
     title: "Wireless",
